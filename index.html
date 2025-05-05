@@ -2,29 +2,34 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Associação dos Missionários</title>
+    <meta charset="UTF-8">
+    <title>Associação Raízes do Futuro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family:Arial,sans-serif; margin:0; padding:0;">
-  
-<nav style="background:#005c99; padding: 1em;">
-  <a href="index.html" style="color:white; margin:0 1em;">Início</a>
-  <a href="sobre.html" style="color:white; margin:0 1em;">Sobre</a>
-  <a href="projetos.html" style="color:white; margin:0 1em;">Projetos</a>
-  <a href="galeria.html" style="color:white; margin:0 1em;">Galeria</a>
-  <a href="depoimentos.html" style="color:white; margin:0 1em;">Depoimentos</a>
-  <a href="blog.html" style="color:white; margin:0 1em;">Blog</a>
-  <a href="voluntario.html" style="color:white; margin:0 1em;">Voluntário</a>
-  <a href="contato.html" style="color:white; margin:0 1em;">Contato</a>
-</nav>
-
-  <header style="background:#e0f0ff; padding:2em; text-align:center;">
-    <h1>Bem-vindo à Associação dos Missionários</h1>
-    <p>Transformando vidas com fé, educação e ação comunitária.</p>
-  </header>
-  <section style="padding:2em;">
-    <h2>Quem Somos</h2>
-    <p>Somos uma organização sem fins lucrativos dedicada a apoiar comunidades através de projetos sociais, educação, agricultura sustentável e ações de fé. Atuamos com amor, dedicação e foco no desenvolvimento humano e espiritual.</p>
-  </section>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="voluntario.html">Voluntário</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" onclick="trocarIdioma()">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bem-vindo à Associação Raízes do Futuro</h1>
+        <p>Transformando vidas com fé, educação e ação comunitária.</p>
+    </main>
+    <script>
+        function trocarIdioma() {
+            window.location.href = "index_en.html";
+        }
+    </script>
 </body>
 </html>
