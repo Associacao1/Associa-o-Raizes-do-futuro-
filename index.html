@@ -1,35 +1,201 @@
-
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Associação Raízes do Futuro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associação dos Missionários Raízes do Futuro</title>
+  <style>
+    :root {
+      --bg-color-light: #e0f2e9;
+      --bg-color-dark: #1e3d1e;
+      --text-color-light: #1e3d1e;
+      --text-color-dark: #ffffff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #2f4f2f, #4caf50);
+      background-attachment: fixed;
+      color: var(--text-color-dark);
+      margin: 0;
+      padding: 0;
+      transition: background 1s ease;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+    header img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .language-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: #ffffff33;
+      color: white;
+      padding: 5px 10px;
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      border-radius: 10px;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      color: #fff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "✅ ";
+    }
+    .nao::before {
+      content: "❌ ";
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .galeria img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="depoimentos.html">Depoimentos</a></li>
-                <li><a href="voluntario.html">Voluntário</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="#" onclick="trocarIdioma()">EN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Bem-vindo à Associação Raízes do Futuro</h1>
-        <p>Transformando vidas com fé, educação e ação comunitária.</p>
-    </main>
-    <script>
-        function trocarIdioma() {
-            window.location.href = "index_en.html";
-        }
-    </script>
+  <div class="language-toggle" onclick="alert('Versão em inglês em construção')">English</div>
+
+  <header>
+    <img src="logo_missionarios_resiliencia.png" alt="Logotipo da associação">
+    <h1>Associação dos Missionários Raízes do Futuro</h1>
+    <p>Transformando vidas através da educação, da agricultura sustentável e da fé</p>
+    <p><strong>Organização Comunitária Cristã</strong></p>
+  </header>
+
+  <section>
+    <h2>Quem Somos</h2>
+    <p>A Associação nasceu da escuta atenta e do envolvimento direto com comunidades que carregam saberes, força e soluções próprias. Enquanto muitos impõem modelos de fora, nós caminhamos junto, não à frente. Dignidade, transformação e autonomia se constroem com as próprias mãos.</p>
+  </section>
+
+  <section>
+    <h2>Nossa Identidade Cristã</h2>
+    <ul>
+      <li>Educação libertadora</li>
+      <li>Agricultura sustentável</li>
+      <li>Fé transformadora</li>
+    </ul>
+    <p>Plantamos hoje as sementes de um amanhã mais justo, próspero e cheio de esperança.</p>
+  </section>
+
+  <section>
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria">
+      <img src="foto1_distribuicao_escolar.jpg" alt="Distribuição de material escolar">
+      <img src="foto2_alimentacao.jpg" alt="Alimentação escolar">
+      <img src="foto3_evento_comunitario.jpg" alt="Evento comunitário">
+    </div>
+  </section>
+
+  <section>
+    <h2>O Que Nos Torna Diferentes?</h2>
+    <ul>
+      <li>Escutamos, apoiamos e caminhamos juntos</li>
+      <li>Cultivamos alianças, não dependência</li>
+      <li>Presença real e compromisso de longo prazo</li>
+      <li class="nao">Não prometemos salvar ninguém</li>
+      <li class="nao">Não reduzimos pessoas a “beneficiárias”</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>O Problema Que Enfrentamos</h2>
+    <ul>
+      <li>Abandono institucional</li>
+      <li>Pobreza normalizada</li>
+      <li>Soluções que não escutam</li>
+    </ul>
+    <p>As comunidades estão cansadas de serem tratadas como receptores passivos. Querem ser protagonistas de suas histórias.</p>
+  </section>
+
+  <section>
+    <h2>Nossa Solução</h2>
+    <ul>
+      <li>Fortalecer vínculos</li>
+      <li>Compartilhar saberes</li>
+      <li>Criar espaços de encontro, luta e esperança</li>
+    </ul>
+    <p>Atuamos com base na experiência vivida, na escuta ativa e numa visão de justiça e dignidade.</p>
+  </section>
+
+  <section>
+    <h2>Nossa Missão</h2>
+    <p>Transformar realidades por meio da fé cristã, da educação e da agricultura sustentável, promovendo o desenvolvimento integral das comunidades.</p>
+  </section>
+
+  <section>
+    <h2>Nossa Visão</h2>
+    <p>Construir um futuro onde crianças, jovens e famílias vivam com dignidade, esperança e oportunidades — com fé, conhecimento e sustentabilidade.</p>
+  </section>
+
+  <section>
+    <h2>Nossos Valores</h2>
+    <ul>
+      <li>✝ Fé em Deus</li>
+      <li>❤️ Amor ao próximo</li>
+      <li>📚 Educação transformadora</li>
+      <li>🌱 Sustentabilidade</li>
+      <li>⚖ Justiça e Esperança</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p><strong>Associação dos Missionários Raízes do Futuro</strong></p>
+    <p>📍 Cheringoma, Vila de Inhaminga, Bairro Dake</p>
+    <p>📞 844492160 / 834160871</p>
+    <p>✉ associacaodosmissionarioscg@gmail.com</p>
+    <p>🌐 <a href="https://associacao1.github.io/Associa-o-Raizes-do-futuro-/" target="_blank">Nosso site</a></p>
+    <p>Juntos, somos sementes de um futuro melhor.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Associação dos Missionários Raízes do Futuro</p>
+  </footer>
 </body>
 </html>
